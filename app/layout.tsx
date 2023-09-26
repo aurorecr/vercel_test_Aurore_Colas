@@ -32,7 +32,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
                   <Link href="/questionA">Question A</Link>
                   <Link href="/questionB">Question B</Link>
                   <Link href="/questionC">Question C</Link>
-                  <Link href="/questionD">Question D</Link>
+                  <Link href="/questionD">Question D1</Link>
                   <Link href="/merci">Merci</Link>
                 </nav>
               </div>
