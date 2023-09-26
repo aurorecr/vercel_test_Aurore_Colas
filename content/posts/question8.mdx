@@ -1,0 +1,25 @@
+---
+title: Question 8
+description: A customer is creating a site and would like their project not to be indexed by search engines. 
+Please write a reply to the customer. Separately, list any relevant documentation you found and any feedback or information you’d like to share about your decision-making process.
+date: 2023-09-26"
+---
+
+Dear client,
+
+
+I hope you are well,
+
+
+Thank you for reaching out to the support team.
+By default, Vercel ensures that your project is not indexed by search engines. This is achieved through the X-Robots-Tag HTTP header, which is set to 'noindex' for Vercel Preview Deployments. This instructs search engines not to index the content.
+If you are using a Custom Domain for your non-Production Branch, the 'X-Robots-Tag: noindex' header is not set automatically. In such cases, you can manually set this header to maintain the default behavior of preventing indexing.
+If you wish to change this behavior and allow search engines to index your Preview Deployments. 
+To override the default behavior, please follow the steps on the below page: 
+[Are Vercel Preview Deployments indexed by search engines?](https://vercel.com/guides/are-vercel-preview-deployment-indexed-by-search-engines)
+
+If you have any further questions or need additional assistance, we are here to assist you,
+
+
+Best regards,
+Aurore
