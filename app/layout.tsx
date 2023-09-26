@@ -30,7 +30,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
                 <nav className="ml-auto text-sm font-medium space-x-6">
                   <Link href="/">Home</Link>
                   <Link href="/questionA">Question A</Link>
-                  <Link href="/questionB">Question B1</Link>
+                  <Link href="/questionB">Question B</Link>
                   <Link href="/questionC">Question C1</Link>
                   <Link href="/questionD">Question D1</Link>
                   <Link href="/merci">Merci</Link>
