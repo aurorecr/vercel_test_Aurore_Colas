@@ -33,10 +33,11 @@ export default function RootLayout({ children }: RootLayoutProps) {
                   <Link href="/questionB">Question B</Link>
                   <Link href="/questionC">Question C</Link>
                   <Link href="/questionD">Question D</Link>
+                  <Link href="/questionE">Question E</Link>
                   <Link href="/merci">Merci</Link>
                 </nav>
-              </div>"
-
+              </div>
+            
             </header>
             <main>{children}</main>
           </div>
