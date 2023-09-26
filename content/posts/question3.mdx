@@ -1,24 +1,15 @@
----
 title: Question 3
-description: When would you choose to use Edge Functions, Serverless Functions, or Edge Middleware with Vercel?
+description: How would you compare Next.js with another frontend framework? Feel free to compare with a framework of your choice.
 date: "2023-09-26"
 ---
 
-### Edge Middleware
-“Edge Middleware is code that executes before a request is processed on a site”. 
-It can be used when the goal is to modify responses and requests at the edge before they're cached. It's great for personalizing statically generated content based on incoming requests.
+I will compare Next.js and Express.js. The both have distinct roles in web development:
+
+  - Next.js is mainly used for creating the parts of a website that users see and interact with. It's good at making web pages load fast and work well.
+   Next.js specializes in creating server-rendered React applications for dynamic user interfaces.
 
 
-### Edge Functions
-“Vercel's Edge Functions enable you to deliver dynamic, personalized content with the lightweight Edge Runtime.”
-This will be chosen for delivering dynamic, personalized content with short latency. 
+  - Express.js, on the other hand, is used for the behind-the-scenes purpose that makes a website run, such as handling data and requests from users. It’s designed for web app and API development.
+Next.js excels in optimizing the user experience, combining aesthetic appeal with efficient functionality, while Express.js specializes in managing the technical infrastructure that powers the website. 
 
-It's ideal for fast network interactions such as OAuth callbacks, responding to webhook requests, or interacting with an API that fails if a request is not completed within a short time limit.
-
-
-### Serverless Functions
-“Vercel Serverless Functions enable running code on-demand without needing to manage your own infrastructure, provision servers, or upgrade hardware.”
-
-It’s perfect for handling server-side tasks like user authentication, form submissions, database queries, or complex backend operations. They will automatically scale with traffic and are versatile for various tasks.
-
-The choice to pick one or the other should match the project's specific needs, whether that's changing content, delivering it quickly, or efficiently handling server tasks
+Frequently, these two frameworks are utilized in tandem to construct a comprehensive and high-performing website.
