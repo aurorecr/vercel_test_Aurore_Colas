@@ -1,0 +1,55 @@
+---
+title: Question 7
+description:  A customer has a project on Vercel and they want to redirect the /blog path to another website. Please write a reply to the customer. 
+Separately, list any relevant documentation you found and any feedback or information you’d like to share about your decision-making process.
+date: "2023-09-26"
+---
+
+Dear client,
+I hope you are well,
+Thank you for reaching out to the support team.
+I understand that you want to redirect a /blog path to another website on Vercel.
+To do so it is possible to use either a next.config.js configuration file for Next.js projects or a vercel.json configuration file for all other use cases.
+
+
+###Next.js Redirects
+
+```module.exports = {
+  async redirects() {
+    return [
+      {
+   "source": "/blog",
+  "destination": "https://newwebsite.com",
+  "permanent": true
+      },
+    ]
+  },
+}
+```
+
+###Other Redirects
+
+```{
+  "redirects": [
+    { 
+ "source": "/blog",
+  "destination": "https://newwebsite.com",
+  "permanent": true
+    }
+  ]
+}
+```
+
+In this configuration, `"source"` represents the path you want to redirect (`/blog`), `"destination"` is the URL of the website you want to redirect to (`https://example.com`), and `"permanent": true` specifies that this is a permanent redirect.
+From that you can deploy your project on Vercel for the redirection to take effect.
+Your `/blog` path will now be permanently redirected to `https://example.com`.
+
+For more information on setting up redirects on Vercel, please follow the below link:
+
+[Does Vercel support permanent redirects?](https://vercel.com/guides/does-vercel-support-permanent-redirects#in-application-redirects)
+
+If you have any further questions or need additional assistance, we are here to assist you,
+
+Best regards,
+Aurore
+
